@@ -12,3 +12,14 @@ http://www.open-open.com/lib/view/open1423703640748.html#articleHeader0
 http://www.111cn.net/sys/linux/118539.htm
 #docker网络自定义设置
 http://blog.csdn.net/gobitan/article/details/51104362
+------------------------------------
+#docker使用自定义网桥
+# 先关闭docker
+$ sudo service docker stop
+# 关闭网桥docker0# 添加自己的网桥bridge0
+$ sudo ifconfig docker0 down
+$ sudo brctl addbr bridge0
+$ sudo ifconfig bridge0 192.168.227.1 netmask 255.255.255.0
+# 向Docker startup file中添加启动自定义网桥参数
+$ echo "DOCKER_OPTS=\"-b=bridge0\"" >> /etc/default/docker
+-----------------------------------------
