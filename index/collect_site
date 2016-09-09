@@ -27,3 +27,5 @@ $ echo "DOCKER_OPTS=\"-b=bridge0\"" >> /etc/default/docker
 http://www.kancloud.cn
 账号：dreamchaser_24@163.com
 -----------------------------------------
+
+#difftool比较查看
