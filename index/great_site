@@ -23,3 +23,7 @@ $ sudo ifconfig bridge0 192.168.227.1 netmask 255.255.255.0
 # 向Docker startup file中添加启动自定义网桥参数
 $ echo "DOCKER_OPTS=\"-b=bridge0\"" >> /etc/default/docker
 -----------------------------------------
+#看云地址/账号
+http://www.kancloud.cn
+账号：dreamchaser_24@163.com
+-----------------------------------------
