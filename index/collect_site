@@ -27,4 +27,5 @@ $ echo "DOCKER_OPTS=\"-b=bridge0\"" >> /etc/default/docker
 http://www.kancloud.cn
 账号：dreamchaser_24@163.com
 -----------------------------------------
-
+#学习资源网站：极客学院
+http://wiki.jikexueyuan.com/
